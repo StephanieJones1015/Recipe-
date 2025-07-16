@@ -201,7 +201,7 @@ h1{
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: rgb(32, 74, 88);
+    color: rgb(116, 59, 207);
     align-items: center;
     text-align: center;
 }
@@ -263,3 +263,25 @@ h1{
     margin-bottom: 10px;
 
 }
+
+.message {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 600px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.message.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.message.info,
+.message.loading {
+  color: #181177;
+  background-color: #b7d6e9;
+  border: 1px solid #14545e;
+}
+
