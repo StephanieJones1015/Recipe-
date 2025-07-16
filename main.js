@@ -1,4 +1,4 @@
-const SEARCH_API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="; // TODO: Set your API URL here
+const SEARCH_API_URL = "https://tasty.p.rapidapi.com/recipes/auto-complete?prefix="; // TODO: Set your API URL here
 
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
