@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main class="recipe-section-container">
+    <h1>Recipe</h1>
+
+    <form>
+       <input type="text" id="search-input" placeholder = "Search by ingredients(e.g. 'chicken, rice')" required />
+       <button type="submit" id="search-button">Search</button>
+    </form>
+    
+    <section class="random-recipe-button">
+        <button id="random-button" class="random-button">Random Recipe</button>
+    </section>
+
+    <section class="message" id="message-area"></section>
+
+    <section class="Results-grid" id="results-grid">
+        <article class="recipe-item">
+          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/530006.jpg?resize=900:*&output-format=auto&output-quality=auto"
+          alt="Mashup Butter Chicken Meatballs"/>
+          <h3>Mashup Butter Chicken Meatballs</h3>
+        </article>
+
+        <article class="recipe-item">
+          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/530006.jpg?resize=900:*&output-format=auto&output-quality=auto"
+          alt="Mashup Butter Chicken Meatballs"/>
+          <h3>Mashup Butter Chicken Meatballs</h3>
+        </article>
+
+        <article class="recipe-item">
+          <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/530006.jpg?resize=900:*&output-format=auto&output-quality=auto"
+          alt="Mashup Butter Chicken Meatballs"/>
+          <h3>Mashup Butter Chicken Meatballs</h3>
+        </article>
+
+    </section>
+
+</main>
+ 
+<section class="modal-container hidden" id="recipe-modal">
+    <div class="modal-content">
+        <button id="modal-close-btn" class="modal-close-btn">+</button>
+        <article id="recipe-details-content">
+            <!-- Recipe details will be dynamically inserted here -->
+
+            <h2>Mashup Butter Chicken Meatballs</h2>
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/530006.jpg?resize=900:*&output-format=auto&output-quality=auto"
+          alt="Mashup Butter Chicken Meatballs"/>
+          <h3>Category: Dessert</h3>
+          <h3>Category: Dessert</h3>
+          <h3>Category: Dessert</h3>
+
+          <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+          </ul>
+
+          <h3>Instructions:</h3>
+          <p> preheat the over to a certain degree. mix all the ingredients in a bowl. make sure it is like you like it. Bake it and then you are done.</p>
+          <h3> Video Recipe</h3>
+          <aside class="video-wrapper">
+            <a href="https://youtu.be/9_5wHw6l11o" target="_blank">Watch Video</a>
+          </aside>
+          <footer class="source wrapper">
+            <a href="#" target="_blank"> View Original Source</a>
+          </footer>
+
+        </article>
+    </div>
+        
+</section>
+ <script src="main.js"></script>
+</body>
+</html>
