@@ -202,6 +202,8 @@ h1{
     font-weight: 600;
     margin-bottom: 20px;
     color: rgb(32, 74, 88);
+    align-items: center;
+    text-align: center;
 }
 #recipe-details-content img {
     width: 100%;
