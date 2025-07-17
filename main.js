@@ -1,4 +1,4 @@
-const SEARCH_API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="; // TODO: Set your API URL here
+const SEARCH_API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="; 
 const RANDOM_RECIPE_API_URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 const searchForm = document.getElementById("search-form");
@@ -10,14 +10,14 @@ const modal = document.getElementById("recipe-modal");
 const modalContent = document.getElementById("recipe-details-content");
 const modalCloseButton = document.getElementById("modal-close-btn");
 
-searchForm.addEventListener("submit", (e) => {
+searchForm.addEventListener("submit", e => {
   e.preventDefault();
   const searchTerm = searchInput.value.trim();
 
   if (searchTerm) {
     searchRecipes(searchTerm);
   } else {
-    showMessage("Please enter a search term", true);
+    showMessage("Please enter a search term", true );
   }
 });
 
