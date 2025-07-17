@@ -1,9 +1,11 @@
 const SEARCH_API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s="; // TODO: Set your API URL here
+const RANDOM_RECIPE_API_URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
 const resultsGrid = document.getElementById("results-grid");
 const messageArea = document.getElementById("message-area");
+const randomButton = document.getElementById("random-button");
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -71,4 +73,27 @@ recipes.forEach(recipe => {
 });
 
 
+}
+randomButton.addEventListener("click", getRandomRecipe);
+
+async function getRandomRecipe() {
+    showMessage("Fetching a random recipe...", false, true);
+    resultsGrid.innerHTML = "";
+
+    try {
+        const response = await fetch(RANDOM_RECIPE_API_URL);
+        if (!response.ok) throw new Error("Opps! Something went wrong.");
+
+        const data = await response.json();
+
+        clearMessage();
+        
+        if (data.meals && data.meals.length > 0) {
+            displayRecipes(data.meals);
+        } else {
+            showMessage("No random recipe found.", true);
+        }
+        } catch (error) {
+        showMessage("Failed to find a random recipe. Please try again.", true);
+    }
 }
