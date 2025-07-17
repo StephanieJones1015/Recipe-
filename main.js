@@ -6,38 +6,45 @@ const searchInput = document.getElementById("search-input");
 const resultsGrid = document.getElementById("results-grid");
 const messageArea = document.getElementById("message-area");
 const randomButton = document.getElementById("random-button");
+const modal = document.getElementById("recipe-modal");
+const modalContent = document.getElementById("recipe-details-content");
+const modalCloseButton = document.getElementById("modal-close-btn");
 
 searchForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const searchTerm = searchInput.value.trim();
-    
+  e.preventDefault();
+  const searchTerm = searchInput.value.trim();
 
-    if (searchTerm) {
-        searchRecipes(searchTerm);
-    } else {
-        showMessage("Please enter an ingredient.", true);
-    } 
+  if (searchTerm) {
+    searchRecipes(searchTerm);
+  } else {
+    showMessage("Please enter a search term", true);
+  }
 });
-async function searchRecipes(query) {
-   showMessage(`Searching for "${query}"...`, false, true);
-   resultsGrid.innerHTML= ""; 
 
-   try {
+
+
+async function searchRecipes(query) {
+  showMessage(`Searching for "${query}"...`, false, true);
+  resultsGrid.innerHTML = "";
+
+  try {
     const response = await fetch(`${SEARCH_API_URL}${query}`);
-    if (!response.ok) throw new Error("Network response was not ok");
+    if (!response.ok) throw new Error("Network error");
 
     const data = await response.json();
     clearMessage();
-    console.log("data:", data);
+    console.log("data: ", data);
+
     if (data.meals) {
-        displayRecipes(data.meals);  
-    }else {
-        showMessage(`There is no recipe for "${query}"`, true);
+      displayRecipes(data.meals);
+    } else {
+      showMessage(`No recipes found for "${query}",`);
     }
-   } catch (error) {
-    showMessage("OOPS something isn't quite right, Please retry.", true);
-   }
+  } catch (error) {
+    showMessage("Oops! Something went wrong, Please try again.", true);
+  }
 }
+
 
 function showMessage(message, isError = false, isLoading = false) {
     messageArea.textContent = message; 
@@ -97,3 +104,34 @@ async function getRandomRecipe() {
         showMessage("Failed to find a random recipe. Please try again.", true);
     }
 }
+
+function showModal() {
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  modal.classList.add("hidden");
+  document.body.style.overflow = "";
+}
+
+resultsGrid.addEventListener("click", (e) => {
+  const card = e.target.closest(".recipe-item");
+
+  if (card) {
+    const recipeId = card.dataset.id;
+    getRecipeDetails(recipeId);
+  }
+});
+
+async function getReceipeDetails(id) {
+    showModal(); 
+}
+
+modalCloseButton.addEventListener("click", closeModal);
+
+modal.addEventListener("click", e => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
