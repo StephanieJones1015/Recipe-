@@ -21,7 +21,7 @@ body {
 
 h1{
     font-size: 3.0rem;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 20px;
     letter-spacing: -1px;
 
@@ -34,7 +34,7 @@ h1{
     margin-bottom: 20px;
     padding: 10px;
     max-width: 600px;
-    box-shadow: 0 4px 15px rgba (0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgb(137, 58, 240);;
     border-radius: 10px;
     margin-inline: auto;
 }
@@ -46,6 +46,7 @@ h1{
     border: 1px solid rgb(177, 28, 177);
     border-radius: 10px 0 0 10px;
     transition: border-color 0.3s ease;
+    outline: none;
 
 }
 #search-input:focus {
@@ -62,13 +63,11 @@ h1{
     border: 0 10px 10px 10px;
     border-radius: 0 10px 10px 0;
     transition: background-color 0.3s ease;
-   
-
-
 }
+
 #search-button:hover {
     background-color: rgb(64, 38, 97);
-    cursor: pointer;
+    cursor: wait;
     transform: translateY(-2px);
 }
 
@@ -84,12 +83,13 @@ h1{
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 2px 8px rgba(110, 134, 187, 0.1);
     padding: 10px 20px;
-    cursor: pointer;
+    cursor: wait;
 
 }
 .random-button:hover {
     background-color: rgb(3, 39, 116);
-    transform: translateY(-2px)
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgb(51, 39, 212);
 }
 
 .Results-grid {
@@ -110,7 +110,7 @@ h1{
     background-color: white;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 20px 4px 10px rgba(32, 2, 44, 0.1);
+    box-shadow: 20px 4px 10px rgba(41, 2, 92, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
