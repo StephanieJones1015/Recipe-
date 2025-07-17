@@ -27,6 +27,11 @@ async function searchRecipes(query) {
     const data = await response.json();
     clearMessage();
     console.log("data:", data);
+    if (data.meals) {
+        displayRecipes(data.meals);  
+    }else {
+        showMessage(`There is no recipe for "${query}"`, true);
+    }
    } catch (error) {
     showMessage("OOPS something isn't quite right, Please retry.", true);
    }
@@ -45,4 +50,25 @@ function showMessage(message, isError = false, isLoading = false) {
 function clearMessage() {
     messageArea.textContent = "";
     messageArea.className = "message";
+}
+
+function displayRecipes(recipes) {
+    if (!recipes || recipes.length === 0) {
+        showMessage("No recpes found.", true);
+        return;
+}
+
+recipes.forEach(recipe => {
+    const recipeDiv = document.createElement("div");
+    recipeDiv.classList.add("recipe-item");
+
+    recipeDiv.innerHTML = `
+        <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" loading="lazy">
+        <h3>${recipe.strMeal}</h3>
+        <p>${recipe.strInstructions.slice(0, 100)}...</p>
+    `;
+    resultsGrid.appendChild(recipeDiv);
+});
+
+
 }
