@@ -52,6 +52,7 @@ h1{
 #search-input:focus {
    border-color: rgb(77, 2, 139);
    box-shadow: 0 0 5px purple;
+   
 }
 #search-button {
     padding: 15px 25px;
@@ -103,12 +104,12 @@ h1{
 .recipe-item img{
     width: 100%;
     border-radius: 10px;
-    height: 220px;
+    height: 600px;
     object-fit: cover;
 }
 .recipe-item {
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 20px 4px 10px rgba(41, 2, 92, 0.1);
     text-align: center;
