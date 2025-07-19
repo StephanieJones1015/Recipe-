@@ -18,7 +18,7 @@ searchForm.addEventListener("submit", (e) => {
   if (searchTerm) {
     searchRecipes(searchTerm);
   } else {
-    showMessage("Please enter a search term", true);
+    showMessage("Please enter the ingredients", true);
   }
 });
 
