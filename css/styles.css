@@ -33,7 +33,7 @@ h1{
     align-items: center;
     margin-bottom: 20px;
     max-width: 600px;
-    box-shadow: 0 4px 15px rgb(137, 58, 240);;
+    box-shadow:  4px 4px 15px rgb(137, 58, 240);;
     border-radius: 10px;
     margin-inline: auto;
 }
@@ -52,13 +52,11 @@ h1{
 #search-input:focus {
    border-color: rgb(77, 2, 139);
    box-shadow: 0 0 5px purple;
-   
 }
 #search-button {
     padding: 15px 25px;
     font-size: 1rem;
     font-weight: 600px;
-    font-family: "Roboto", sans-serif;
     background-color: rgb(137, 89, 151);
     color: white;
     border: 0 10px 10px 10px;
@@ -77,13 +75,12 @@ h1{
     padding: 20px 40px;
     font-size: 1rem;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
     background-color: rgb(139, 165, 235);
     border: 1px solid rgb(12, 49, 129);
     border-radius: 10px;
     color: white;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 8px rgba(110, 134, 187, 0.1);
+    box-shadow: 0 2px 8px rgba(6, 46, 133, 0.1);
     cursor: wait;
 
 }
@@ -143,8 +140,8 @@ h1{
   z-index: 1000;
   opacity: 1;
   visibility: visible;
-  backdrop-filter: blur(3px);
-  padding: 20px;
+  backdrop-filter: blur(5px);
+  padding: 20px
   transition: opacity 0.3s ease, visibility 0s ease 0s;
 }
 
@@ -229,11 +226,12 @@ h1{
     list-style: none;
     padding-left: 0;
     margin-bottom: 20px;
+    
 
 }
 #recipe-details-content ul li {
     padding: 5px 0;
-    border-bottom: 1px dashed rgb(164, 219, 238);
+    border-bottom: 3px dashed rgb(164, 219, 238);
     font-size: 1rem;
 
 }
@@ -251,7 +249,7 @@ h1{
 #recipe-details-content a {
     color: rgb(50, 52, 196);
     text-decoration: none;
-    border-bottom: 1px dashed rgb(52, 151, 184);
+    border-bottom: 2px dashed rgb(52, 151, 184);
     padding: 2px 0;
     font-weight: 800;
 }
