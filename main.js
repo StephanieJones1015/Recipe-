@@ -4,6 +4,7 @@ const LOOKUP_API_URL = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
 
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
+const clearButton = document.getElementById("clear-button");
 const resultsGrid = document.getElementById("results-grid");
 const messageArea = document.getElementById("message-area");
 const randomButton = document.getElementById("random-button");
@@ -21,6 +22,14 @@ searchForm.addEventListener("submit", (e) => {
     showMessage("Please enter the ingredients", true);
   }
 });
+
+clearButton.addEventListener("click", () => {
+  searchInput.value = "";
+})
+
+searchInput.addEventListener('focus', () => {
+      searchInput.setAttribute('autocomplete', 'off');
+    });
 
 async function searchRecipes(query) {
   showMessage(`Searching for "${query}"...`, false, true);
