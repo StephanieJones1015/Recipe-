@@ -49,7 +49,7 @@ async function searchRecipes(query) {
       showMessage(`No recipes found for "${query}",`);
     }
   } catch (error) {
-    showMessage("Something went wrong, Please try again.", true);
+    showMessage("Opps! Something went wrong. Please try again", true);
   }
 }
 
@@ -66,7 +66,7 @@ function clearMessage() {
 
 function displayRecipes(recipes) {
   if (!recipes || recipes.length === 0) {
-    showMessage("No recipes to display");
+    showMessage("No recipes fpr that ingredient to display");
     return;
   }
 
@@ -92,7 +92,7 @@ async function getRandomRecipe() {
 
   try {
     const response = await fetch(RANDOM_API_URL);
-    if (!response.ok) throw new Error("Something went wrong.");
+    if (!response.ok) throw new Error("Opps! Something went wrong.");
     const data = await response.json();
 
     clearMessage();
@@ -100,11 +100,11 @@ async function getRandomRecipe() {
     if (data.meals && data.meals.length > 0) {
       displayRecipes(data.meals);
     } else {
-      showMessage("Could not fetch a random recipe. Please try again.", true);
+      showMessage("Could not show a random recipe. Please try again.", true);
     }
   } catch (error) {
     showMessage(
-      "Failed to fetch a random recipe. Please check your connection and try again.",
+      "Failed to show a random recipe. Please try again.",
       true
     );
   }
@@ -143,11 +143,11 @@ async function getRecipeDetails(id) {
       displayRecipeDetails(data.meals[0]);
     } else {
       modalContent.innerHTML =
-        '<p class="message error">Could not load recipe details.</p>';
+        '<p class="message error">Could not show recipe details.</p>';
     }
   } catch (error) {
     modalContent.innerHTML =
-      '<p class="message error">Failed to load recipe details. Check your connection or try again.</p>';
+      '<p class="message error">Failed to load recipe details. Please try again.</p>';
   }
 }
 
@@ -189,7 +189,7 @@ function displayRecipeDetails(recipe) {
     ? `<h3>Video Recipe</h3><div class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><div>`
     : "";
   const sourcHTML = recipe.strSource
-    ? `<div class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Source</a></div>`
+    ? `<div class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Recipe</a></div>`
     : "";
 
   modalContent.innerHTML = `
