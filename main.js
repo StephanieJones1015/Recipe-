@@ -186,10 +186,10 @@ function displayRecipeDetails(recipe) {
       : "Instructions not available."
   }</p>`;
   const youtubeHTML = recipe.strYoutube
-    ? `<h3>Video Recipe</h3><div class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><div>`
+    ? `<h3>Video Recipe</h3><aside class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><aside>`
     : "";
   const sourcHTML = recipe.strSource
-    ? `<div class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Recipe</a></div>`
+    ? `<footer class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Recipe</a></footer>`
     : "";
 
   modalContent.innerHTML = `
