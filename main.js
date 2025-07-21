@@ -186,7 +186,7 @@ function displayRecipeDetails(recipe) {
       : "Instructions not available."
   }</p>`;
   const youtubeHTML = recipe.strYoutube
-    ? `<h3>Video Recipe</h3><aside class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><aside>`
+    ? `<h3>Video/Original Recipe</h3><aside class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><aside>`
     : "";
   const sourcHTML = recipe.strSource
     ? `<footer class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Recipe</a></footer>`
