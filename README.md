@@ -18,8 +18,7 @@ There were several challenges for me during this process. I struggled with makin
 # using search function
 <video controls src="search ingredient.mp4" title="Title"></video>
 
-# using random function
-<video controls src="random-showing back button or clicking outside card to exit.mp4" title="Title"></video>
+
 
 
 
