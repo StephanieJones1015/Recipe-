@@ -13,15 +13,6 @@ This was a great learning experience for me. I wanted to add lots of css design 
 # Challenges:
 There were several challenges for me during this process. I struggled with making the JavaScript work correctly. Primarily the recipe card was a challenge. In styling the card, I had to delete the "hidden" in html which I did not realize initially, for example. The JavaScript to display exactly what I wanted to be shown on each recipe was also a huge struggle for me and I learned a great deal watching numerous videos and reading several sources such as "web development for dummies" to overcome all of these obstacles. Another challenge was making the search input responsive to fit really small mobile devices. 
  
-
-# Video:
-# using search function
-<video controls src="search ingredient.mp4" title="Title"></video>
-
-
-
-
-
 # Sources: 
 I used several sources to help overcome challenges with this project, those include https://www.bing.com/videos/riverview/relatedvideo?&q=how+to+populate+a+recipe+card+with+html+css+and+javascript&&mid=2B363FF924CDABBD86BF2B363FF924CDABBD86BF&&FORM=VRDGAR, https://www.bing.com/videos/riverview/relatedvideo?&q=how+to+populate+a+recipe+card+with+html+css+and+javascript&&mid=D5741BA9FD2F3B126259D5741BA9FD2F3B126259&&FORM=VRDGAR, https://developer.mozilla.org/en-US/, https://www.w3schools.com/, https://www.w3schools.com/, https://www.youtube.com/watch?v=n33eOE5qViY, https://www.youtube.com/watch?v=KWTyC1WKdFw&t=18263s for a few examples.
 
