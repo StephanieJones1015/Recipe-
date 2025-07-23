@@ -47,13 +47,12 @@ h1{
     flex-grow: 1;
     border: 1px solid rgb(177, 28, 177);
     border-radius: 10px 0 0 10px;
-    transition: border-color 0.3s ease;
-    outline: none;
+    transition: border-color 0.3s ease;   
 }
 
 #search-input:focus {
-   border-color: rgb(77, 2, 139);
-   box-shadow: 0 0 5px purple;
+   border-color: black;
+   box-shadow: 0 0 5px rgb(143, 17, 152);
 }
 
 #search-button {
