@@ -16,10 +16,16 @@ There were several challenges for me during this process. I struggled with makin
 # Sources: 
 I used several sources to help overcome challenges with this project, those include https://www.bing.com/videos/riverview/relatedvideo?&q=how+to+populate+a+recipe+card+with+html+css+and+javascript&&mid=2B363FF924CDABBD86BF2B363FF924CDABBD86BF&&FORM=VRDGAR, https://www.bing.com/videos/riverview/relatedvideo?&q=how+to+populate+a+recipe+card+with+html+css+and+javascript&&mid=D5741BA9FD2F3B126259D5741BA9FD2F3B126259&&FORM=VRDGAR, https://developer.mozilla.org/en-US/, https://www.w3schools.com/, https://www.w3schools.com/, https://www.youtube.com/watch?v=n33eOE5qViY, https://www.youtube.com/watch?v=KWTyC1WKdFw&t=18263s for a few examples.
 
+# Future improvements
+1. adding a favorites page
+2. adding a build shopping list 
+3. possibly linking to local stores to show the sale items that are listed on the shopping list 
+4. adding a page for sharing original recipes of the users 
+
 # Tools:
-HTML
-CSS
-JavaScript
+1. HTML
+2. CSS
+3. JavaScript
 
 # To view the webpage
 1. clone github
