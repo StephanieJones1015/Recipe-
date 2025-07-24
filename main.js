@@ -10,7 +10,7 @@ const messageArea = document.getElementById("message-area");
 const randomButton = document.getElementById("random-button");
 const modal = document.getElementById("recipe-modal");
 const modalContent = document.getElementById("recipe-details-content");
-const modalCloseBtn = document.getElementById("modal-close-btn");
+const modalBackBtn = document.getElementById("modal-back-btn");
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -115,7 +115,7 @@ function showModal() {
   document.body.style.overflow = "hidden";
 }
 
-function closeModal() {
+function backModal() {
   modal.classList.add("hidden");
   document.body.style.overflow = "";
 }
@@ -151,11 +151,11 @@ async function getRecipeDetails(id) {
   }
 }
 
-modalCloseBtn.addEventListener("click", closeModal);
+modalBackBtn.addEventListener("click", backModal);
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
-    closeModal();
+    backModal();
   }
 });
 

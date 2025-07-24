@@ -193,7 +193,7 @@ h1{
   transform: scale(0.95);
 }
 
-.modal-content .modal-close-btn {
+.modal-content .modal-back-btn {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -210,7 +210,7 @@ h1{
   transition: all 0.2s ease;
 }
 
-.modal-content .modal-close-btn:hover {
+.modal-content .modal-back-btn:hover {
   color: rgb(111, 176, 197);
   background-color: #306aa5;
   transform: translateY(-2px);
