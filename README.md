@@ -31,7 +31,7 @@ I used several sources to help overcome challenges with this project, those incl
 1. clone github
 2. run Go Live in VS Code
 
-# image
-![alt text](IMG_2808.jpg)
+# Image
+![home screen](images/IMG_2808.jpg)
 
 Thank you for visiting my project. 
