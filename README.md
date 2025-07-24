@@ -31,8 +31,7 @@ I used several sources to help overcome challenges with this project, those incl
 1. clone github
 2. run Go Live in VS Code
 
-# images
-![opening page](IMG_2808.jpg)
-![search function](IMG_2809.jpg)
+# image
+![alt text](IMG_2808.jpg)
 
 Thank you for visiting my project. 
