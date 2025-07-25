@@ -66,7 +66,7 @@ function clearMessage() {
 
 function displayRecipes(recipes) {
   if (!recipes || recipes.length === 0) {
-    showMessage("No recipes fpr that ingredient to display");
+    showMessage("No recipes for that ingredient to display");
     return;
   }
 
