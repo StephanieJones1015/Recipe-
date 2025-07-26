@@ -22,6 +22,10 @@ I used several sources to help overcome challenges with this project, those incl
 5. https://www.youtube.com/watch?v=KWTyC1WKdFw&t=18263s 
 6. https://stackoverflow.com/questions
 7. https://forum.freecodecamp.org/t/build-a-recipe-page-build-a-recipe-page/731633
+8. https://www.youtube.com/watch?v=x8EY0BlhPGk
+9. https://www.youtube.com/watch?v=UnvsUEA71BA
+
+
 
 
 
