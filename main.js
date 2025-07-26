@@ -87,7 +87,7 @@ function displayRecipes(recipes) {
 randomButton.addEventListener("click", getRandomRecipe);
 
 async function getRandomRecipe() {
-  showMessage("Fetching a random recipe...", false, true);
+  showMessage("Finding a random recipe...", false, true);
   resultsGrid.innerHTML = "";
 
   try {
@@ -135,7 +135,7 @@ async function getRecipeDetails(id) {
 
   try {
     const response = await fetch(`${LOOKUP_API_URL}${id}`);
-    if (!response.ok) throw new Error("Failed to fetch recipe details.");
+    if (!response.ok) throw new Error("Failed to find any recipe details.");
     const data = await response.json();
 
     console.log("details: ", data);
