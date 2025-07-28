@@ -27,9 +27,6 @@ clearButton.addEventListener("click", () => {
   searchInput.value = "";
 })
 
-searchInput.addEventListener('focus', () => {
-      searchInput.setAttribute('autocomplete', 'off');
-    });
 
 async function searchRecipes(query) {
   showMessage(`Searching for "${query}"...`, false, true);
@@ -188,7 +185,7 @@ function displayRecipeDetails(recipe) {
   const youtubeHTML = recipe.strYoutube
     ? `<h3>Video/Original Recipe</h3><aside class="video-wrapper"><a href="${recipe.strYoutube}" target="_blank">Watch on YouTube</a><aside>`
     : "";
-  const sourcHTML = recipe.strSource
+  const sourceHTML = recipe.strSource
     ? `<footer class="source-wrapper"><a href="${recipe.strSource}" target="_blank">View Original Recipe</a></footer>`
     : "";
 
@@ -200,6 +197,6 @@ function displayRecipeDetails(recipe) {
   ${ingredientsHTML}
   ${instructionsHTML}
   ${youtubeHTML}
-  ${sourcHTML}
+  ${sourceHTML}
   `;
 }
