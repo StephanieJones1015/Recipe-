@@ -12,6 +12,8 @@ const modal = document.getElementById("recipe-modal");
 const modalContent = document.getElementById("recipe-details-content");
 const modalBackBtn = document.getElementById("modal-back-btn");
 
+
+
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchTerm = searchInput.value.trim();
