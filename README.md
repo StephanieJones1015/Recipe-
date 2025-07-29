@@ -25,6 +25,10 @@ I used several sources to help overcome challenges with this project, those incl
 8. https://www.youtube.com/watch?v=x8EY0BlhPGk
 9. https://www.youtube.com/watch?v=UnvsUEA71BA
 10. https://www.youtube.com/watch?v=n33eOE5qViY
+11. https://www.freecodecamp.org/news/creating-a-random-meal-generator/
+12. https://www.youtube.com/watch?v=Y9TNHynFjaQ
+
+
 
 
 
