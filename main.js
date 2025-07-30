@@ -14,6 +14,7 @@ const modalBackBtn = document.getElementById("modal-back-btn");
 
 
 
+
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchTerm = searchInput.value.trim();
