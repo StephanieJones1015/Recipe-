@@ -3,7 +3,10 @@
 EJ's Recipe Guide
 
 # Purpose:
-Welcome to my project. This is a recipe guide that is built for my son, his friends, and other college students to use. The main objective is to provide a fun and quick way to list what ingredients that the user has available and then find a recipe based on those ingredients. The main objective of the project is to encourage my son and other students to be able to save money and possibly eat healthier but providing a way to use what they have available instead of eating out constantly. 
+Welcome to my project. This is a recipe guide that is built for my son, his friends, and other college students to use. The main objective is to provide a fun and quick way to list what ingredients that the user has available and then find a recipe based on those ingredients. The main objective of the project is to encourage my son and other students to be able to save money and possibly eat healthier but providing a way to use what they have available instead of eating out constantly. The css is designed in a way that will definitely appeal to my son, the HTML personalizes it for him to encourage usage, and the JavaScript works correctly to provide recipes based on ingredients that he inputs into the search bar or provides a random recipe if that is what he desires.
+
+# Features:
+
  
 # Sources: 
 I used several sources to help overcome challenges with this project, those include 
