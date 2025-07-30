@@ -308,6 +308,34 @@ h1{
   border: 1px solid #14545e;
 }
 
+a:link, a:visited {
+  background-color: #65a7e4;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(123, 52, 229);
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.aboutme {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
 @media (max-width: 465px) {
   .search-box {
     width: 100%;      
