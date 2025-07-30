@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: rgb(236, 229, 229);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgb(137, 58, 240)
+}
+
+h1 {
+    font-size: 2.0em;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.converter-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 4px 4px 15px rgb(137, 58, 240);
+}
+
+.input-group {
+    position: relative;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: rgb(105, 5, 105); 
+}
+
+.swap-btn {
+    background: rgb(195, 21, 195);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background ease 0.3s;
+    box-shadow: 4px 4px 15px rgba(137, 58, 240);
+}
+
+.swap-btn:hover {
+    background: rgb(148, 148, 227);
+}
+
+#result {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    background: #a8bee7;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(175, 124, 241);
+}
+a:link, a:visited {
+  background-color: #65a7e4;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(123, 52, 229);
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+}
+@media (max-width) {
+    .converter-wrapper {
+        grid-template-columns: auto;
+        gap:10px;
+        justify-content: center;
+    }
+}
+   
+.swap-btn {
+    width:100%;
+    margin-top:10px;
+}
