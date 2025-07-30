@@ -336,6 +336,13 @@ a:hover, a:active {
     text-align: center;
 }
 
+.profile-pic, .section-pic-one, .section-pic-two, .section-pic-three, .section-pic-four {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
 @media (max-width: 465px) {
   .search-box {
     width: 100%;      
