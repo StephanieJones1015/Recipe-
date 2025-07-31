@@ -5,7 +5,15 @@ EJ's Recipe Guide
 # Purpose:
 Welcome to my project. This is a recipe guide that is built for my son, his friends, and other college students to use. The main objective is to provide a fun and quick way to list what ingredients that the user has available and then find a recipe based on those ingredients. The main objective of the project is to encourage my son and other students to be able to save money and possibly eat healthier but providing a way to use what they have available instead of eating out constantly. The css is designed in a way that will definitely appeal to my son, the HTML personalizes it for him to encourage usage, and the JavaScript works correctly to provide recipes based on ingredients that he inputs into the search bar or provides a random recipe if that is what he desires.
 
-# Features:
+# Features required for the capstone:
+1. Responsive: I used flex, grid and media queries for all three pages. examples are flex-grow: 1 which will allow the element to fill the available space within the flex container- which the available space will change with the size of the device. grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) was used on the recipe grid so this allows the cards to automatically to fill the columns that are provided to support as many cards as are pollulated and the size is a minimum or 240px but a maximum of 1fr-taking up the space available.
+2. API Fetch :Makes a fetch api to mealsdb api for searching by ingredient and also for a random recipe.
+3. 10 distinct commits- more than that was made and pushes were done through the terminal/command line
+4. visually appealing- all pages are made with a completementing css style- using lots of purples and blues and css functions were implemented on each page.
+5. I typed all code in word and did spell check.
+6. text consistent across all pages- I installed google fonts- to ensure that the font was the same for all pages.
+
+
 
  
 # Sources: 
