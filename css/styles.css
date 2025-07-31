@@ -309,15 +309,24 @@ h1{
 }
 
 a:link, a:visited {
-  background-color: #65a7e4;
+  background-color: #77abdf;
   color: white;
   padding: 5px 5px;
+  margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
-  border: rgb(109, 15, 138) 2px solid;
+  border: rgb(147, 8, 189) 2px solid;
   box-shadow: 2px 2px 20px rgb(175, 124, 241);
+}
+
+.video-wrapper, source wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 a:hover, a:active {
