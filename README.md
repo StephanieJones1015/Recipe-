@@ -12,7 +12,48 @@ Welcome to my project. This is a recipe guide that is built for my son, his frie
 4. visually appealing- all pages are made with a completementing css style- using lots of purples and blues and css functions were implemented on each page.
 5. I typed all code in word and did spell check.
 6. text consistent across all pages- I installed google fonts- to ensure that the font was the same for all pages.
+7. Analyze data that is stored in arrays, objects.... and display information about it in your app-  recipes.forEach((recipe) => {
+    const recipeDiv = document.createElement("div");
+    recipeDiv.classList.add("recipe-item");
+    recipeDiv.dataset.id = recipe.idMeal;
 
+    recipeDiv.innerHTML = `
+        <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" loading="lazy">
+        <h3>${recipe.strMeal}</h3>
+    `;
+
+    resultsGrid.appendChild(recipeDiv);
+  });
+is analying the array that is found as an object for each individual recipe and then transforming this into a recipe card
+8. use a regular expression to validate user input and either prevent the invalid input or inform the user about it - any of the message functions would be an example of this, such as the following which will alert the user to that an input needs to be made in order for the website to search. This alson demonstrates code to prevent the default behavior so I can manipulate the data and the trim method eliminates white space making the search more efficient
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm) {
+    searchRecipes(searchTerm);
+  } else {
+    showMessage("Please enter the ingredients", true);
+  }
+});
+9. visualize data is a user friendly way- production of the pop up recipe or modal would be an example of this. In order to populate this I had to use document.createElement 
+ recipes.forEach((recipe) => {
+    const recipeDiv = document.createElement("div");
+    recipeDiv.classList.add("recipe-item");
+    recipeDiv.dataset.id = recipe.idMeal;
+
+    recipeDiv.innerHTML = `
+        <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" loading="lazy">
+        <h3>${recipe.strMeal}</h3>
+    `;
+
+    resultsGrid.appendChild(recipeDiv);
+  })
+  10. convert user input between two formats and display the result- The entire coversion table was built for this reason and to enhance user experience
+  11. create a function that accepts two or more input parameters and returns a value that is calculated by the inputs. the async function is an example of this. the parameters are to show the message, false signfies an error which I established previously in the code, and true is for loading which again, I established previously in the code. The outcome is how the message is displayed. If it results in an error it will populate in a red block with a lighter shade of red for the text and loading will appear with a blue background and blue text
+  async function getRandomRecipe() {
+  showMessage("Finding a random recipe...", false, true);
+  resultsGrid.innerHTML = "";
 
 
  
