@@ -39,7 +39,9 @@ I used several sources to help overcome challenges with this project, those incl
 2. install Live Server if you do not have that extension in VS Code
 3. click Go Live in the bottom right corner to view the page 
 
-# Image
-![home screen](images/IMG_2808.jpg)
+# Image!
+![about me page](images/IMG_2868.jpeg)
+![conversion table](images/IMG_2870.jpeg)
+![recipe guide](images/IMG_2871.jpeg)
 
 Thank you for visiting my project. 
