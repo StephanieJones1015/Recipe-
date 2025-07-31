@@ -315,6 +315,9 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 10px;
+  border: rgb(109, 15, 138) 2px solid;
+  box-shadow: 2px 2px 20px rgb(175, 124, 241);
 }
 
 a:hover, a:active {
