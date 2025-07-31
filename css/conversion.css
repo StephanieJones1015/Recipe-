@@ -77,6 +77,7 @@ input:focus, select:focus {
     border-radius: 5px;
     box-shadow: 2px 2px 20px rgb(175, 124, 241);
 }
+
 a:link, a:visited {
   background-color: #65a7e4;
   color: white;
