@@ -45,6 +45,7 @@ const conversions = {
     kg: { g: 1000, type: 'weight' },
     oz: { g: 28.3495, type: 'weight' },
     lb: { g: 453.592, type: 'weight' }
+    
 };
 
 
