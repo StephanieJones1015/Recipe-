@@ -72,6 +72,11 @@ I used several sources to help overcome challenges with this project, those incl
 11. https://www.freecodecamp.org/news/creating-a-random-meal-generator/
 12. https://www.youtube.com/watch?v=Y9TNHynFjaQ
 13. https://www.w3schools.com/cssref/css_entities.php for the swap symbol
+14. https://www.bakinglikeachef.com/kitchen-conversion-chart-printable/
+15. https://www.geeksforgeeks.org/html/html-select-tag/
+16. https://www.youtube.com/watch?v=dggIMoMARY0&t=1030s
+17. https://www.youtube.com/shorts/AnQhiIj5Zt8
+18. https://www.youtube.com/shorts/OfILVPCS_lI
 
 # Future improvements
 1. adding a favorites page
