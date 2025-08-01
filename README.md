@@ -103,6 +103,7 @@ I used several sources to help overcome challenges with this project, those incl
 
 # To view the webpage
 1. clone https://github.com/StephanieJones1015/Recipe-.git 
+2. Open up VS Code 
 2. install Live Server if you do not have that extension in VS Code
 3. click Go Live in the bottom right corner to view the page 
 
