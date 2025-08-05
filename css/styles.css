@@ -51,7 +51,7 @@ h1{
 }
 
 #search-input:focus {
-   border-color: black;
+   border-color: 1px solid rgb(23, 20, 20);
    box-shadow: 0 0 5px rgb(143, 17, 152);
 }
 
